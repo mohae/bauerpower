@@ -1,25 +1,13 @@
-# Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.o
-*.a
-*.so
+# Don’t commit the following directories created by pub.
+build/
+packages/
 
-# Folders
-_obj
-_test
+# Or the files created by dart2js.
+*.dart.js
+*.dart.precompiled.js
+*.js_
+*.js.deps
+*.js.map
 
-# Architecture specific extensions/prefixes
-*.[568vq]
-[568vq].out
-
-*.cgo1.go
-*.cgo2.c
-_cgo_defun.c
-_cgo_gotypes.go
-_cgo_export.*
-
-_testmain.go
-
-*.exe
-*.test
-*.*~
-*.out
+# Include when developing application packages.
+pubspec.lock
