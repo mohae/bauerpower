@@ -1,0 +1,9 @@
+name: bauerpower
+version: 0.0.1
+author: Joel Scoble
+description: Euchre Baby!
+dev_dependencies:
+  polymer: '>=0.11.0 <0.12.0'
+transformers:
+- polymer:
+    entry_points: web/bauer_power.html

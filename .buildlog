@@ -1,0 +1,35 @@
+---
+build.dart --machine --changed=pubspec.lock --changed=pubspec.yaml --changed=web/bauer_power.css --changed=web/...
+
+build.dart finished [1444 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [2371 ms]
+
+---
+build.dart --machine --changed=web/bauerpower.css --removed=web/bauer_power.css
+
+build.dart finished [1323 ms]
+
+---
+build.dart --machine --changed=web/bauerpower.dart --removed=web/bauer_power.dart
+
+build.dart finished [1416 ms]
+
+---
+build.dart --machine --changed=web/bauerpower.html --removed=web/bauer_power.html
+
+build.dart finished [1464 ms]
+
+---
+build.dart --machine --changed=web/bauerpower.html
+[{"method":"warning","params":{"file":"web/bauerpower.html","message":"Only one \"application/dart\" script tag per document is allowed.","line":63,"charStart":2156,"charEnd":2204}}]
+build.dart finished [1351 ms]
+
+---
+build.dart --machine --removed=web/clickcounter.dart --removed=web/clickcounter.html
+[{"method":"warning","params":{"file":"web/bauerpower.html","message":"Only one \"application/dart\" script tag per document is allowed.","line":63,"charStart":2156,"charEnd":2204}}]
+build.dart finished [1274 ms]
+
