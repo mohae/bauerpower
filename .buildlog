@@ -33,3 +33,8 @@ build.dart --machine --removed=web/clickcounter.dart --removed=web/clickcounter.
 [{"method":"warning","params":{"file":"web/bauerpower.html","message":"Only one \"application/dart\" script tag per document is allowed.","line":63,"charStart":2156,"charEnd":2204}}]
 build.dart finished [1274 ms]
 
+---
+build.dart --machine --changed=web/deck.dart
+[{"method":"warning","params":{"file":"web/bauerpower.html","message":"Only one \"application/dart\" script tag per document is allowed.","line":63,"charStart":2156,"charEnd":2204}}]
+build.dart finished [1319 ms]
+

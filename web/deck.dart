@@ -8,25 +8,27 @@ class Deck {
   final List<Card> _cards = new List<Card>(NUM_CARDS);
 
   Deck() {
-    _populateCards();
+    _getDeck();
   }
 
-  void _populateCards() {
-    var pivot = 0;
-    for (var suit = 0; suit < NUM_SUITS; ++ suit) {
-      var color = suit % 2;
-      for (var number = 1; number <= NUM_CARDS_BY_SUIT; ++ number) {
-        _cards[pivot ++] = new Card(suit, number, color);
+  void _getDeck() {
+    var count = 0;
+    // Start suit index at 1
+    for (var suit = 1; suit <= NUM_SUITS; ++ suit) {
+      //Euchre decks go from 9 to Aces, or 9 to 14, inclusive.
+      for (var number = 9; number <= 14; ++ number) {
+        _cards[count ++] = new Card(suit, number);
       }
     }
   }
 
   List<Card> get cards => _cards;
 
-  void shuffle(int seed) {
+ /// shuffle implements the Fisher-Yates shuffle. 
+  void shuffle() {
     var random = new math.Random(seed);
 
-    for (var i = 0; i < _cards.length; ++ i) {
+    for (var i = _cards.length - 1; i > 0; i--) {
       _swapCards(i, random.nextInt(_cards.length));
     }
   }
